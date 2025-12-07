@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>English Janala</title>
 
     <!-- Daisy UI CDN -->
-     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-<!--Google Fonts CDN -->
+    <!--Google Fonts CDN -->
 
     <!-- For Poopins Font  -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- For Tiro Bangla Font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">         
-
+    <!-- For Tiro Bangla Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome CDN -->
     <script
@@ -29,42 +38,235 @@
     ></script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles/index.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
     <!-- Header section -->
     <header>
-        <!-- navigation bar  -->
-         <nav class="bg-slate-100 py-5 border-b-2 border-b-gray-400">
-            <!-- main div -->
-            <div class="w-11/12  mx-auto flex justify-between items-center ">
-                <!-- sub div -->
-                 <div class="flex items-center">
-                    <h1 class="text-xl font-semibold text-[#18181B]">English</h1>
-                    <img src="assets/logo.png" alt="logo">
-                    <h1 class="tiro-bangla text-xl font-normal text-[#000000]">জানালা</h1>
-                 </div>
-                 <!-- another div -->
-                 <div class=" flex items-center gap-4">
-                    <button class="btn btn-outline btn-accent "><i class="fa-solid fa-question"></i> FAQ</button>
-                    <button class="btn btn-outline btn-accent"><i class="fa-solid fa-book"></i> Learn</button>
-                    <button class="btn btn-outline btn-accent"><i class="fa-brands fa-font-awesome"></i> Log Out</button>
-                 </div>
-
-            </div>
-         </nav>
+      <!-- navigation bar  -->
+      <nav class="bg-slate-100 py-5 border-b-2 border-b-gray-400">
+        <!-- main div -->
+        <div class="w-11/12 mx-auto flex justify-between items-center">
+          <!-- sub div -->
+          <div class="flex items-center">
+            <h1 class="text-xl font-semibold text-[#18181B]">English</h1>
+            <img src="assets/logo.png" alt="logo" />
+            <h1 class="tiro-bangla text-xl font-normal text-[#000000]">
+              জানালা
+            </h1>
+          </div>
+          <!-- another div -->
+          <div class="flex items-center gap-4">
+            <button id="questation" class="btn btn-outline btn-accent">
+              <i class="fa-solid fa-question"></i> FAQ
+            </button>
+            <button class="btn btn-outline btn-accent">
+              <i class="fa-solid fa-book"></i> Learn
+            </button>
+            <button class="btn btn-outline btn-accent">
+              <i class="fa-brands fa-font-awesome"></i> Log Out
+            </button>
+          </div>
+        </div>
+      </nav>
     </header>
 
-<!-- Main Section -->
+    <!-- Main Section -->
     <main>
-          
+      <!-- Banner Section -->
+      <section>
+        <!-- main Div -->
+        <div class="w-11/12 mx-auto mt-8 flex justify-between items-center">
+          <div>
+            <h1 class="font-bold text-3xl mb-4">
+              <span class="text-[#00BCFF]">English</span> is Easy!!
+            </h1>
+            <p class="w-9/12 font-medium text-xl text-[#18181B]">
+              আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+              আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে
+              যাবে অন্য একটি Level এ
+            </p>
+            <form action="">
+              <input
+                class="mt-5 px-3 py-1 rounded-md"
+                type="text"
+                name=""
+              
+                placeholder="Enter Your name"
+                required
+              />
+              <br /><br />
+              <input
+                class="px-3 py-1 rounded-md"
+                type="password"
+                name=""
+           
+                placeholder="Enter your password"
+              />
+            </form>
+            <button class="btn btn-info mt-5">Get Started</button>
+          </div>
+          <!-- image Div -->
+          <div>
+            <img
+              class="max-w-xl"
+              src="assets/hero-student.png"
+              alt="Hero Student"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Accordion Section -->
+      <section id="faqSection" class="mt-40 w-11/12 mx-auto mb-20">
+        <!-- Main Div -->
+        <div>
+          <h1 class="font-bold text-4xl text-center mb-10">
+            <span class="text-[#00bcff]">Frequently</span> Asked Questions
+          </h1>
+          <!-- Accordion for answer the Question -->
+          <div
+            class="collapse collapse-arrow bg-base-100 border border-base-300"
+          >
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title font-semibold">
+              What is the Difference between Var, let and Const ?
+            </div>
+            <div class="collapse-content text-sm">
+              Var is the old way of declaring variables in JavaScript — it is
+              function-scoped and can be re-declared or updated, which often
+              causes bugs. let is the modern way and is block-scoped, meaning it
+              only works inside the { } where it is declared; it can be updated
+              but not re-declared in the same scope. const is also block-scoped
+              but cannot be updated or re-declared; it is used for values that
+              should never change. In simple words: use let for variables that
+              will change, use const for fixed values, and avoid var because it
+              behaves unpredictably.
+            </div>
+          </div>
+          <div
+            class="collapse collapse-arrow bg-base-100 border border-base-300"
+          >
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">
+              What is the Difference Between map() , ForEach() and Filter() ?
+            </div>
+            <div class="collapse-content text-sm">
+              ForEach() is used when you want to loop through every item in an
+              array and perform an action, but it does not return anything.
+              map() also loops through an array, but it creates and returns a
+              new array based on whatever transformation you apply to each item.
+              On the other hand, filter() goes through the array and returns a
+              new array containing only the elements that meet a specific
+              condition. In summary: use forEach when you just want to do
+              something, use map when you want a new transformed array, and use
+              filter when you want to keep only certain items based on a
+              condition.
+            </div>
+          </div>
+          <div
+            class="collapse collapse-arrow bg-base-100 border border-base-300"
+          >
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">
+              What are arrow Functions and what is the Difference between arrow
+              functions and Normal Functions ?
+            </div>
+            <div class="collapse-content text-sm">
+              Arrow functions are a shorter and more modern way to write
+              functions in JavaScript. They use the => symbol and make the code
+              look cleaner, especially for small tasks. Unlike normal functions,
+              arrow functions do not have their own this, arguments, super, or
+              new.target, which means they behave differently when used inside
+              objects, classes, or event handlers. Arrow functions cannot be
+              used as constructors (you cannot create objects with new using
+              them), but normal functions can. Normal functions also get
+              hoisted, meaning they can be used before they are written, while
+              arrow functions cannot. In short: arrow functions are shorter and
+              good for simple callbacks, while normal functions are more
+              powerful and flexible for object methods, constructors, and places
+              where this matters.
+            </div>
+          </div>
+          <div
+            class="collapse collapse-arrow bg-base-100 border border-base-300"
+          >
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">
+              How do the Java Script Promisses are work ?
+            </div>
+            <div class="collapse-content text-sm">
+              A Promise in JavaScript is like a guarantee that some work
+              (usually something slow like fetching data from an API) will
+              finish in the future. Instead of stopping the whole program,
+              JavaScript continues running and the Promise tells you when the
+              work is done. A Promise has three states: Pending → work is still
+              happening Resolved (Fulfilled) → work is done successfully
+              Rejected → something went wrong When the Promise finishes, it
+              sends back the result using either .then() (if successful) or
+              .catch() (if it fails). This helps JavaScript handle asynchronous
+              tasks smoothly without freezing the page. Promises let us write
+              cleaner, non-blocking code by allowing operations to run in the
+              backgro
+            </div>
+          </div>
+          <div
+            class="collapse collapse-arrow bg-base-100 border border-base-300"
+          >
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title font-semibold">
+              How does Clauser Works in Java Script ?
+            </div>
+            <div class="collapse-content text-sm">
+              A Promise in JavaScript represents a value that will be available
+              now, later, or never. It has three states: pending, fulfilled, and
+              rejected. Promises help you handle asynchronous tasks like API
+              calls. When the task succeeds, the promise becomes fulfilled and
+              runs the .then() block; if it fails, it becomes rejected and runs
+              the .catch() block. This makes asynchronous code cleaner and
+              avoids “callback hell.” Promises simply say: “I’m doing something;
+              when it’s done, I’ll let you know.”
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer Section -->
-    <footer>
+    <footer class="border-t-indigo-500 border-t-1 pt-10">
+        <!-- Main Div -->
+         <div class="w-11/12 mx-auto mb-24 mt-24 flex justify-between items-center">
 
+            <div class="">
+                <div class="flex items-center mb-5">
+            <h1 class="text-xl font-semibold text-[#18181B]">English</h1>
+            <img src="assets/logo.png" alt="logo" />
+            <h1 class="tiro-bangla text-xl font-normal text-[#000000]">
+              জানালা
+            </h1>
+          </div>
+          
+          <h1 class="mb-2">ইংরেজি শিখুন সহজে</h1>
+          <h1>Providing ED-Tech Applications since 2025</h1>
+          
+            </div>
+
+
+
+            <div>
+                <h1 class="font-semibold text-sm mb-4 text-[#18181B80]">FOLLOW US</h1>
+                 <div class="flex items-center gap-4">
+                    <img src="assets/fb-thumb.png" alt="facebook">
+                    <img src="assets/youtube-thumb.png" alt="youtube-thumb">
+                    <img src="assets/instagram-thumb.png" alt="instagram ">
+                 </div>
+            </div>
+
+         </div>
     </footer>
-    
-</body>
+
+
+    <!-- Add the JS files  -->
+     <script src="JS/index.js"></script>
+  </body>
 </html>
