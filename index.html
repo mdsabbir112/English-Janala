@@ -23,6 +23,11 @@
       rel="stylesheet"
     />
 
+    <!-- For Inter Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
     <!-- For Tiro Bangla Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -63,7 +68,7 @@
           </div>
           <!-- another div -->
           <div class="flex items-center gap-4">
-            <button id="questation" class="btn btn-soft btn-info text-[#422AD5] border-[#422AD5]">
+            <button  id="questation" class="btn btn-soft btn-info text-[#422AD5] border-[#422AD5]">
               <i class="fa-solid fa-question"></i> FAQ
             </button>
             <button id="LearnId" class="btn btn-soft btn-info text-[#422AD5] border-[#422AD5]">
@@ -127,7 +132,9 @@
       <!-- Learn Section -->
       <section id="MainLearn"> 
         <!-- Main Div  -->
-         <div class="w-11/12 mx-auto mb-48"> 
+
+
+             <div class="w-11/12 mx-auto mb-24"> 
             <h1 class="font-bold text-3xl text-center "><span class="text-[#00BCFF]">Let's </span>Learn Vocabularies</h1>
             <!-- Dynamic API Button Div  -->
              <div id="Learn" class="flex justify-center items-center gap-6 mt-12 flex-wrap">
@@ -135,28 +142,32 @@
 
              </div>
 
-             <!-- Main page text  -->
-              <div class="hind-siliguri bg-[#F8F8F8] text-center py-20 mt-8 rounded-2xl">
+             <!-- Main page text  --> 
+              <div id="MainPagetext">
+              <div  class="flex flex-col justify-center items-center hind-siliguri bg-[#F8F8F8] text-center py-20 mt-8 rounded-2xl">
+                 <!-- <img class="w-[120px]" src="assets/alert-error.png" alt="alert-error"> -->
                  <h2 class="font-normal text-sm text-[#79716B] mb-3">আপনি এখনো কোন Lesson Select করেন ন</h2>
                  <h1 class="font-medium text-4xl text-[#292524]">একটি Lesson Select করুন।</h1>
+              </div>
               </div>
 
          </div>
 
 
          <!-- Extra Card section -->
-          <div class=" bg-[#F8F8F8] w-11/12 mx-auto">
-            <div id="showCards" class=" grid grid-cols-3 items-center gap-4 p-5 ">
+          <div class="  w-11/12 mx-auto rounded-lg">
+           <div id="showCards" class="bg-[#F8F8F8] grid grid-cols-3 items-center gap-4 p-5">
+             <!-- <div  class=" "> -->
                 <!-- Card-1 -->
-                <div class="bg-white rounded-lg">
+                <!-- <div class="bg-white rounded-lg">
     <div class="text-center my-14">
         <h1 class="mt-2 mb-2">continues</h1>
         <h3 class="mt-2 mb-2">Meaning / Pronounciation</h3>
-        <h3 class="mt-2 mb-10">Write Bangla</h3>
-    </div>
+        <h3  class="mt-2 mb-10">Write Bangla</h3>
+    </div> -->
 
     <!-- Icons  -->
-    <div class="flex mx-12 justify-between items-center mb-14">
+    <!-- <div class="flex mx-12 justify-between items-center mb-14">
         <div>
             <button class="bg-[#c8dff4] px-2 py-1 rounded">
                 <i class="fa-solid fa-circle-info"></i>
@@ -169,42 +180,15 @@
             </button>
         </div>
     </div>
-</div>
+</div> -->
 
-                <!-- Card-2 -->
-                 <!-- <div class="bg-white">
-                    <div class="text-center">
-                        <h1>continues</h1>
-                        <h3>Meaning / Pronounciation </h3>
-                        <h3>Write Bangla </h3>
-
-                    </div> -->
-
-                 <!-- </div> -->
-                <!-- Card-3 -->
-                 <!-- <div class="bg-white">
-                    <div class="text-center">
-                        <h1>continues</h1>
-                        <h3>Meaning / Pronounciation </h3>
-                        <h3>Write Bangla </h3>
-
-                    </div>
-
-                 </div> -->
-                <!-- Card-4 -->
-                 <!-- <div class="bg-white">
-                    <div class="text-center">
-                        <h1>continues</h1>
-                        <h3>Meaning / Pronounciation </h3>
-                        <h3>Write Bangla </h3>
-
-                    </div>
-
-                 </div>
-                  -->
-            </div>
+              
+            
           </div>
+           </div>
 
+
+        </div>
 
       </section>
 
@@ -359,7 +343,8 @@
 
 
     <!-- Add the JS files  -->
-     <script src="JS/index.js"></script>
+     <!-- <script src="JS/index.js"></script> -->
+     <script src="JS/practice.js"></script>
 
   </body>
 </html>

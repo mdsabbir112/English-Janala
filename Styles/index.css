@@ -1,3 +1,6 @@
+ 
+ /* Google fonts classes */
+
  body {
     font-family: 'Poppins', sans-serif;
   }
@@ -6,7 +9,19 @@
   font-family: "Tiro Bangla", serif;
 }
 
+.inter {
+  font-family: "Inter", sans-serif;
+}
 
 .hind-siliguri {
   font-family: "Hind Siliguri", sans-serif;
 }
+
+
+ /* General Classes  */
+.active {
+    /* color: white ; */
+    background-color: orange ;
+    box-shadow: 0 4px 6px -1px rgb(59 130 246 / 0.5), 0 2px 4px -2px rgb(59 130 246 / 0.5);
+}
+
