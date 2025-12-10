@@ -10,7 +10,7 @@ const loadLearnBtn = () => {
 loadLearnBtn();
 
 const DisplayLearnBtn = (btns) => {
-    console.log(btns);
+    // console.log(btns);
     const sectionbtn = document.getElementById("Learn");
     
     // Run an Loop 
@@ -33,6 +33,8 @@ const MakeLearnCardsURL = (BtnCardNo) => {
     fetch(`https://openapi.programming-hero.com/api/level/${BtnCardNo}`)
     .then (Response => Response.json())  
     .then (data => DisplayLearnCards(data.data));
+
+    CardDetails(BtnCardNo);
     
 
 }
@@ -45,10 +47,15 @@ const DisplayLearnCards = (cardsArray) => {
         // Remove all the html functionality before adding new one
                 const MainPagetext = document.getElementById("MainPagetext");
 
-    if (cardsArray.length === 0) {
-        alert("No Cards Found");
-        MainPagetext.innerHTML = "";
+                // Clear all the previous cards
+                const ClearCards = document.getElementById("showCards");
+                ClearCards.innerHTML = "";
 
+    if (cardsArray.length === 0) {
+        // alert("No Cards Found"); 
+
+        MainPagetext.innerHTML = "";
+ 
         const nullArray = document.getElementById("MainPagetext");
         const div = document.createElement("div");
         div.innerHTML = `
@@ -63,6 +70,8 @@ const DisplayLearnCards = (cardsArray) => {
         return;
     }
 
+
+
 // Run a for of loop 
     for (const card of cardsArray) {
 
@@ -73,10 +82,12 @@ const DisplayLearnCards = (cardsArray) => {
 
                 // MainPagetext.style.display = "none";
                 MainPagetext.innerHTML = "";
+
+
                 
                 // Remove active class from all buttons
                 const findActiveClass = document.getElementsByClassName("active");
-                console.log(findActiveClass);
+                // console.log(findActiveClass);
                 for (let btnColor of findActiveClass) {
                     btnColor.classList.remove("active");
                     // console.log(btnColor);
@@ -91,7 +102,7 @@ const DisplayLearnCards = (cardsArray) => {
             const createDiv = document.createElement("div");
             
             createDiv.innerHTML = `
-                                <div class="inter bg-white rounded-lg p-1 ">
+                                <div class="inter bg-white hover:bg-sky-200 rounded-lg p-1 ">
     <div class="text-center my-14">
         <h1 class="mt-2 mb-5 font-bold text-3xl">${card.word}</h1>
         <h3 class=" mb-6 font-medium text-xl">Meaning / Pronounciation</h3>
@@ -121,7 +132,12 @@ const DisplayLearnCards = (cardsArray) => {
     }
 
        
-
+const CardDetails = (BtnCardNo) => {
+    // console.log(BtnCardNo);
+    // fetch(`https://openapi.programming-hero.com/api/word/${BtnCardNo}`)
+    // .then (Response => Response.json())
+    // .then (data => console.log(data)) ;
+}
 
 
 
@@ -152,7 +168,7 @@ FAQScroll();
 
 
 const demo = () => {
-    fetch("https://openapi.programming-hero.com/api/level/1")
+    fetch("https://openapi.programming-hero.com/api/word/5")
     .then (Response => Response.json())
     .then (data => console.log(data.data)) ;
 }
